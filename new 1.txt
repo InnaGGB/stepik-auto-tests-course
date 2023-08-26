@@ -1,0 +1,9 @@
+c:\Users\sh-no> mkdir selenium_course
+
+C:\Users\sh-no> copy C:\Users\sh-no\Downloads\get_method.py c:\Users\sh-no\selenium_course
+
+C:\Users\sh-no> environments\selenium_env\Scripts\activate.bat
+
+(selenium_env) C:\Users\sh-no>python c:\Users\sh-no\selenium_course\get_method.py
+
+(selenium_env) C:\Users\sh-no>pytest -v --tb=line c:\Users\sh-no\Final_Project\test_product_page.py
