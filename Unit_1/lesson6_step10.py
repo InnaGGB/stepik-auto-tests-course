@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 import time
 
 try: 
@@ -7,7 +8,7 @@ try:
     browser.get(link)
 
     # Ваш код, который заполняет обязательные поля
-    elements = browser.find_elements_by_css_selector ('input[type="text"][required]')
+    elements = browser.find_elements(By.CSS_SELECTOR, "input[required]")
     for element in elements:
         element.send_keys("5")
         
@@ -15,7 +16,7 @@ try:
     time.sleep(3)
 
     # Отправляем заполненную форму
-    button = browser.find_element_by_css_selector("button.btn")
+    button = browser.find_element(By.CSS_SELECTOR, "button.btn")
     button.click()
 
     # Проверяем, что смогли зарегистрироваться
@@ -23,7 +24,7 @@ try:
     time.sleep(1)
 
     # находим элемент, содержащий текст
-    welcome_text_elt = browser.find_element_by_tag_name("h1")
+    welcome_text_elt = browser.find_element(By.TAG_NAME("h1"))
     # записываем в переменную welcome_text текст из элемента welcome_text_elt
     welcome_text = welcome_text_elt.text
 
