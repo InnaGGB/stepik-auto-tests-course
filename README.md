@@ -1,3 +1,3 @@
 # stepik-auto-tests-course
-Это репозиторий для хранения домашних работ по курсу автоматизация тестирования на Stepik,
+This repository contains homework assignments and solutions for the Stepik Test Automation course. 
 https://stepik.org/course/575
